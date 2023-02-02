@@ -5,11 +5,11 @@ const person = {
     age: 25
 };
   
-const {id: identity , firstName: name , lastName: surName, age: yearsold } = person;
+const {id: identity , firstName: name , lastName: surName, age: yearsOld } = person;
 
-const id = person.id;
-const firstName = person.firstName;
-const lastName = person.lastName;
-const age = person.age;
+// const id = person.id;
+// const firstName = person.firstName;
+// const lastName = person.lastName;
+// const age = person.age;
   
-console.log(id, firstName, lastName, age);
+console.log(identity, name, surName, yearsOld);
