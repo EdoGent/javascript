@@ -21,8 +21,15 @@ function getDetails(number) {
     })
 }
 
+function getName({nome}) {
+    throw new Error('This is an added ERROR')
+    return nome;
+}
+
 isLogged(isLogged1)
     .then(getDetails)
-    .then((res) => console.log(res))
+    .then(getName)
+    .then((nome) => console.log(nome))
+    // .then((res) => console.log(res))
     .catch((err) => console.error(err))
-    
+    .finally(() => console.log('I ran when there is an error too'))
